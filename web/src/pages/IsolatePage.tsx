@@ -240,11 +240,11 @@ export function IsolatePage() {
   useEffect(() => {
     previewStopRef.current?.();
     previewStopRef.current = null;
+    setDuration(null);
+    setRegionStart(0);
+    setRegionEnd(30);
     if (!file) {
       setObjectUrl(null);
-      setDuration(null);
-      setRegionStart(0);
-      setRegionEnd(30);
       return;
     }
     const url = URL.createObjectURL(file);
