@@ -1,0 +1,48 @@
+name: Bug report
+description: Something in the desktop app or the website broke.
+title: "[Bug]: "
+body:
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      description: Which app did you use?
+      options:
+        - Desktop
+        - Website
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: OS
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: cpu_gpu
+    attributes:
+      label: CPU/GPU
+      options:
+        - CPU
+        - NVIDIA GPU
+        - Apple Silicon
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true

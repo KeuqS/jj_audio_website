@@ -1,0 +1,22 @@
+name: Feature request
+description: A change you want in the desktop app or the website.
+title: "[Feature]: "
+body:
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      description: Which app should change?
+      options:
+        - Desktop
+        - Website
+        - Both
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: The change
+      description: What should be different when this is done?
+    validations:
+      required: true

@@ -1,5 +1,26 @@
 # Audio Tools
 
+Audio Tools separates a song into tracks and can make a guitar tab PDF. It is two products on one engine.
+
+- **Desktop** runs on this computer: Streamlit in `ui/`, started by `packaging/launcher.py`.
+- **Website** is the hosted app: FastAPI in `backend/` plus the React app in `web/`.
+
+Python **3.11** (3.10–3.12 only). From a clone:
+
+```bash
+make install
+make test
+```
+
+On Windows:
+
+```powershell
+.\scripts\dev.ps1 install
+.\scripts\dev.ps1 test
+```
+
+How to contribute: [CONTRIBUTING.md](CONTRIBUTING.md). Desktop installers and the tester app: [DESKTOP.md](DESKTOP.md). Hosted deploy: [DEPLOY.md](DEPLOY.md).
+
 Desktop installers and local tester commands for terminal
 
 ---
